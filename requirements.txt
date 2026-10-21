@@ -1,0 +1,7 @@
+streamlit
+pandas
+plotly
+pytrends
+pysentimiento
+google-api-python-client
+python-dotenv
