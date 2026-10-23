@@ -27,7 +27,7 @@ for i, video in videos.iterrows():
             textFormat="plainText",
         ).execute()
     except HttpError:
-        print("  sem comentários disponíveis, pulando")
+        print("  sem comentáriios diponiveis, pulando de comentarios ....")
         continue
 
     for item in resposta["items"]:
@@ -38,9 +38,9 @@ for i, video in videos.iterrows():
             "texto": comentario["textDisplay"],
             "data": comentario["publishedAt"][:10],
             "curtidas": comentario["likeCount"],
-        })
+                                    })
 
 tabela = pd.DataFrame(linhas)
 tabela.to_csv("comentarios.csv", index=False, encoding="utf-8-sig")
 
-print("Pronto!", len(tabela), "comentários salvos em comentarios.csv")
+print("finalizado", len(tabela), "comentários salvos em comentarios.csv")

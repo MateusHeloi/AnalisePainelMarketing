@@ -55,4 +55,4 @@ tabela["engajamento"] = tabela["likes"] + tabela["comentarios"]
 
 tabela.to_csv("videos.csv", index=False, encoding="utf-8-sig")
 
-print("Pronto!", len(tabela), "vídeos salvos em videos.csv")
+print("finalizao", len(tabela), "vsalvos em videos.csv")

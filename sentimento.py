@@ -26,4 +26,4 @@ comentarios.to_csv("comentarios_sentimento.csv", index=False, encoding="utf-8-si
 resumo = pd.crosstab(comentarios["marca"], comentarios["sentimento"], normalize="index")
 print((resumo * 100).round(1))
 
-print("Pronto!", len(comentarios), "comentários salvos em comentarios_sentimento.csv")
+print("finalizado", len(comentarios), "salvos em comentarios_sentimento.csv")

@@ -31,7 +31,7 @@ comentarios = comentarios[comentarios["marca"].isin(marcas_selecionadas)]
 trends = trends[trends["marca"].isin(marcas_selecionadas)]
 
 if comentarios.empty:
-  st.warning("Selecione pelo menos uma marca")
+  st.warning("Selecione ao menos uma marca")
   st.stop()
 
 total_comentarios = len(comentarios)
@@ -105,7 +105,7 @@ with col_b:
     )
     st.plotly_chart(fig_trends, use_container_width=True)
   else:
-    st.info("Sem dados de Google Trends disponíveis.")
+    st.info("Sem dados des disponíveis. google trends")
 
 st.markdown("---")
 
